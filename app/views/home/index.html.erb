@@ -9,9 +9,11 @@
 <article class=movie>
   <h2><%= movie.title %> (<%= movie.year %>)</h2>
 
+  <% if movie.runtime.present? %>
   <span class=runtime>
     <%= movie.runtime %> min
   </span>
+  <% end %>
 
   <p class=rating>
     <%= "★" * movie.rating %>
