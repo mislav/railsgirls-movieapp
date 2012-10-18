@@ -5,12 +5,11 @@
   </h1>
 </header>
 
+<% @movies.each do |movie| %>
 <article class=movie>
-  <h2>Drive (2009)</h2>
-  <p class=rating>★★★★★</p>
+  <h2><%= movie.title %> (<%= movie.year %>)</h2>
+  <p class=rating>
+    <%= "★" * movie.rating %>
+  </p>
 </article>
-
-<article class=movie>
-  <h2>Toy Story (1996)</h2>
-  <p class=rating>★★★★★</p>
-</article>
+<% end %>
