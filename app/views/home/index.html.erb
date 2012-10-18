@@ -8,6 +8,11 @@
 <% @movies.each do |movie| %>
 <article class=movie>
   <h2><%= movie.title %> (<%= movie.year %>)</h2>
+
+  <span class=runtime>
+    <%= movie.runtime %> min
+  </span>
+
   <p class=rating>
     <%= "★" * movie.rating %>
   </p>
