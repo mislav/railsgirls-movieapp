@@ -11,13 +11,12 @@
 
   <% if movie.runtime.present? %>
   <span class=runtime>
-    <%= movie.runtime / 60 %>h
-    <%= movie.runtime % 60 %>min
+    <%= display_duration movie.runtime %>
   </span>
   <% end %>
 
   <p class=rating>
-    <%= "★" * movie.rating %>
+    <%= display_rating movie.rating %>
   </p>
 </article>
 <% end %>
