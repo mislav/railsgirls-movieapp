@@ -20,9 +20,9 @@
   </p>
 
   <% if movie.note.present? %>
-  <p class="well well-small">
-    <%= movie.note %>
-  </p>
+  <div class="note well well-small">
+    <%= simple_format movie.note %>
+  </div>
   <% end %>
 </article>
 <% end %>
