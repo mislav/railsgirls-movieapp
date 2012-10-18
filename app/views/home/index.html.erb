@@ -18,6 +18,12 @@
   <p class=rating>
     <%= display_rating movie.rating %>
   </p>
+
+  <% if movie.note.present? %>
+  <p class="well well-small">
+    <%= movie.note %>
+  </p>
+  <% end %>
 </article>
 <% end %>
 

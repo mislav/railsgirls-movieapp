@@ -1,5 +1,5 @@
 class Movie < ActiveRecord::Base
-  attr_accessible :rating, :title, :year, :runtime
+  attr_accessible :rating, :title, :year, :runtime, :note
 
   validates :title,  :presence     => true
   validates :year,   :numericality => { :greater_than => 1890 }
