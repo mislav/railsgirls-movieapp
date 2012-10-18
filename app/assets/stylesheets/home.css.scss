@@ -1,3 +1,17 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding-top: 100px;
+}
+
+article.movie {
+  margin-top: 20px;
+}
+.movie h2 {
+  font-weight: 200;
+}
+.movie .rating {
+  color: coral;
+}
