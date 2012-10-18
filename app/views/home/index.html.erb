@@ -11,7 +11,8 @@
 
   <% if movie.runtime.present? %>
   <span class=runtime>
-    <%= movie.runtime %> min
+    <%= movie.runtime / 60 %>h
+    <%= movie.runtime % 60 %>min
   </span>
   <% end %>
 
