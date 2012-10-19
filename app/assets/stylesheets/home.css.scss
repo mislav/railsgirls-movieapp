@@ -8,6 +8,11 @@ body {
 
 article.movie {
   margin-top: 20px;
+  padding-left: 110px;
+}
+.movie img {
+  margin-left: -110px;
+  float: left;
 }
 .movie h2 {
   font-weight: 200;

@@ -6,7 +6,9 @@
 </header>
 
 <% @movies.each do |movie| %>
-<article class=movie>
+<article class="movie clearfix">
+  <img src="http://placekitten.com/g/92/138">
+
   <h2><%= movie.title %> (<%= movie.year %>)</h2>
 
   <% if movie.runtime.present? %>
